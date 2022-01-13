@@ -1,0 +1,76 @@
+:root {
+    --White: #ffffff;
+    --Dark-opacity-30: rgba(0,0,0,0.3);
+    --Gray-opacity-50: rgba(233,233,233,0.5);
+    --Blue: #0e143c;
+    --Blue-light: #179de9;
+    --Blue-dark: #00507c;
+    --Pink-light: #f1c6d7;
+    --Red-opacity-50: rgba(255,0,0,0.5);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+body {
+    font-family: 'Lato', sans-serif; 
+    font-size: 16px;
+    margin: 0;
+    background-color: var(--Blue-light);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 0 100px;
+    border-bottom: 1px solid grey;
+}
+
+.logo {
+    
+}
+
+header .nav1 {
+    display: flex;
+    flex-direction: row;
+}
+
+header .nav2 {
+    display: flex;
+    flex-direction: row;
+}
+
+header .nav1 ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+header .nav1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header .nav2 ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    gap: 20px;
+}
+
+header .nav2 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* main */
+
+
+
+
+
+
