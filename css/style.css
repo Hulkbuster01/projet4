@@ -17,60 +17,89 @@ body {
     font-family: 'Lato', sans-serif; 
     font-size: 16px;
     margin: 0;
-    background-color: var(--Blue-light);
+    background: transparent linear-gradient(130deg, var(--Blue)0%, var(--Pink-light) 100%) fixed;/* rotation; couleur de départ, couleur de fin*/;
 }
 
+/**
+* Header
+*/
 header {
     display: flex;
     justify-content: space-between;
-    margin: 0 100px 0 100px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid var(--Gray-opacity-50);
+    padding: 10px 0;
+}
+
+.nav-left,
+.nav-left ul,
+.nav-right ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-left ul li a,
+.nav-right ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
 }
 
 .logo {
-    
+    width: 90px;
 }
 
-header .nav1 {
-    display: flex;
-    flex-direction: row;
+.button-light {
+    border: 1px solid var(--White);
+    border-radius: 50px;
+    padding: 4px 14px;
 }
-
-header .nav2 {
-    display: flex;
-    flex-direction: row;
-}
-
-header .nav1 ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 20px;
-}
-
-header .nav1 ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-header .nav2 ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    text-decoration: none;
-    gap: 20px;
-}
-
-header .nav2 ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-
 /* main */
 
+.container {
+    width: 75%;
+    margin: auto;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:  var(--White);
+    padding: 150px 0;
+}
 
+.intro {
+    width: 35%;
+}
 
+.intro h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
 
+.intro p {
+    font-size: 1.5rem;
+    margin: 20px 0 40px 0;
+}
 
+.intro .button-blue {
+    background: transparent linear-gradient(180deg, var(--Blue-light) 0%, var(--Blue-dark) 100%);
+    color: var(--White);
+    padding: 10px 30px;
+    border-radius: 4px;
+    text-shadow: 1px 1px 0 var(--Dark-opacity-30);
+    box-shadow: 0 3px 4px var(--Dark-opacity-30);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.intro .button-border-white {
+    border: 1px solid var(--White);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
 
